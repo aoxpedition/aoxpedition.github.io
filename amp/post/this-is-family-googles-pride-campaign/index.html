@@ -54,7 +54,6 @@
   p, h1, h2, h3, h4, h5{
     line-height: 1.7;
     margin: 0 1rem 1rem;
-    max-width: 868px;
     text-align: left;
   }
   a{
@@ -161,25 +160,22 @@
   }
   article amp-img{
     margin: 0 auto 1rem;
-    max-width: 900px;
   }
   amp-carousel {
     margin: 0 0 1rem;
   }
   amp-carousel amp-img{
     margin: 0;
-    max-width: none;
+
   }
   .parallax-image-window{
     margin: 0 0 1rem;
-    max-width: 900px;
   }
   .parallax {
     margin-bottom: -20%
   }
   .yt{
     margin: 1rem;
-    max-width: 900px;
   }
 
 .post-ft {
@@ -224,8 +220,20 @@
 }
 
   @media (min-width: 900px){
-    p, h1, h2, h3, h4, h5, .yt, .parallax-image-window{
+    p, h1, h2, h3, h4, h5{
       margin: 0 auto 1rem;
+      max-width: 868px;
+    }
+    article amp-img, .parallax-image-window, .yt{
+      margin: 0 auto 1rem;
+      max-width: 900px;
+    }
+    .post-split{
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    amp-carousel amp-img, .post-split amp-img {
+      max-width: none;
     }
     p{
       text-align: justify;
