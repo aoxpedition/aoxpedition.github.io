@@ -23,11 +23,9 @@ jobs:
     - name: Find and Replace
       uses: jacobtomlinson/gha-find-replace@0.1.2
       with:
-        # A regular expression of files to include in our find and replace
-        include: # optional, default is .*
-        # A regular expression of files to exclude in our find and replace
-        exclude: # optional, default is .git
+        # [A regular expression of files to include in our find and replace] include: # optional, default is .*
+        # [A regular expression of files to exclude in our find and replace] exclude: # optional, default is .git
         # The string we want to replace
-        find: 
+        find: "/images/_h"
         # The new string to replace with
-        replace: 
+        replace: "/images/h"
