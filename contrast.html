@@ -10,26 +10,29 @@
   <link rel="stylesheet" type="text/css" href="./css/home.css">
   <link rel="stylesheet" href="./css/who20200808.css">
 <style>
+  video, .img-1st, .img-2nd {
+    filter: blur(2px);
+  }
   .nothing{ 
     color: #397da2; /*bluer*/
     color: #448497; /*greener*/
     color: #447C97; /*middle*/
-    color: #5e9cba;; /*3:1 contrast for large font*/
-    color: #3f7d9d; /*middle saturated, background*/
+    color: #5e9cba; /*3:1 contrast for large font*/
+    color: #3f7d9d; /*middle saturated, background/bold */
     color: #177eb2; /*more saturated, thin font*/
-    color: #016a9f; /*most saturated, thin on gray*/
+    color: #016a9f; /*most saturated, small/thin font or bold on gray */
   }
-  .bottomleft{ 
+  .bottomleft, a{ 
     color: #177eb2;
   }
   a.button{
     border-color: #177eb2;
-    color: #177eb2;
+    color: #016a9f;
     font-weight: 400;
   }
   a.button:hover{
-    border-color: #417995;
-    background-color: #417995;
+    border-color: #3f7d9d;
+    background-color: #3f7d9d;
   }
   .map > h3{
   color: #177eb2;
@@ -42,6 +45,19 @@
   }
   .who-grid .reveal{
     background-color: #5e9cba;
+    color: #000;
+  }
+  .even .reveal{
+    color: #fff;
+  }
+  h2 a, a h2{
+    color: #5e9cba;
+  }
+  strong a, a strong{
+    color: #3f7d9d;
+  }
+  footer a{
+    color: #90c0d8;
   }
   @media (min-width: 1025px) {
     .map > h3{
@@ -192,70 +208,7 @@
       </section>
     </div>
 
-    <div class="homewrap panel3">
-      <section class="projects-grid">
-        <article id="" class="prj">
 
-          <a id="a0" aria-hidden="true">
-            <img loading="lazy" class="loz" data-src="https://www.xpeditionmedia.com/images/_hu0eb68146a5512ff928be88e217e976d6_118066_7deebf740260610c14ad628f17c4a997.jpg" alt="">
-            <div class="p-cap">
-              <p class="p-cli">YouTube Stories</p>
-              <h2 class="p-ti">Nate Boyer</h2>
-            </div>
-          </a>
-        </article>
-        <article id="" class="prj">
-          <a id="a1" aria-hidden="true">
-            <img loading="lazy" class="loz" data-src="https://www.xpeditionmedia.com/images/_hu82f2095f9f81e77465f64c53e5c26bae_115549_20b5f6c9f719ec8854ed097374a89d89.jpg" alt="">
-            <div class="p-cap">
-              <p class="p-cli">Google</p>
-              <h2 class="p-ti">American Hats</h2>
-            </div>
-          </a>
-        </article>
-        <article id="" class="prj">
-          <a id="a2" aria-hidden="true">
-            <img loading="lazy" class="loz" data-src="https://www.xpeditionmedia.com/images/puerto-rico-hurricane-relief-google-xpedition-media_hu7dc7f44b4cbd4330c36803b87ff48a16_90404_750x422_fill_q80_linear_center.jpg" alt="">
-            <div class="p-cap">
-              <p class="p-cli">Google.org</p>
-              <h2 class="p-ti">Puerto Rico Hurricane Relief</h2>
-            </div>
-          </a>
-        </article>
-      </section>
-      <svg id="line3-mason" role="presentation" xmlns="http://www.w3.org/2000/svg" width="642" height="350.4" viewBox="0 0 642 350.4">
-        <g transform="translate(-1863 -5154)">
-          <circle class="start" cx="12.5" cy="12.5" r="12.5" transform="translate(2480 5154)" fill="#90c0d8" />
-          <g transform="translate(2087 5231)">
-            <path class="line" d="M405.1-65V108.5a34.825,34.825,0,0,1-34.8,34.8l-547.035,2.422a34.825,34.825,0,0,0-34.8,34.8v75.9" fill="none" stroke="#90c0d8" stroke-miterlimit="10" stroke-width="5" />
-            <circle class="end" cx="12.6" cy="12.6" r="12.6" transform="translate(-224 248.2)" fill="#90c0d8" />
-          </g>
-        </g>
-      </svg>
-    </div>
-
-    <div class="homewrap panel5">
-      <section class="images-text">
-        <div class="wrap">
-          <div class="images">
-            <img loading="lazy" data-src="https://www.xpeditionmedia.com/images/_hub35230c54032ebe0dbe707b6b9acd5f8_131418_7f7ecc139173ee8a8ff2c865955847a3.jpg" height="1096" width="1536" alt="John&#39;s Crazy Socks Spreading Happiness, John and Mark Cronin" class="loz img-1st">
-            <img loading="lazy" data-src="https://www.xpeditionmedia.com/images/mara-ncte-transvoices-google-xpedition-media-3_hu15f679c2f619f15cc73fb1086ad0eb74_280276_200x0_resize_q80_linear.jpg" height="2046" width="1440" alt="Mara Keisling National Center For Transgender Equality" class="loz img-2nd">
-          </div>
-          <div class="text">
-            <img loading="lazy" src="./images/moon-transparentpng.png" alt="moon icon" role="presentation" class="icon-fade">
-            <div class="headline">
-              <h2>Who<br>we are</h2>
-            </div>
-            <div class="subheadline">
-              <p>Our founding principle has always been to respect the story. Our mission is to tell the most authentic, unique, and diverse stories around the globe. We are committed to making the world a better, more interesting place through stories that inspire and uplift.</p>
-              <a href="/projects/" class="button">
-                Explore our work
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
     <div class="homewrap panel7">
       <section class="map">
         <h2>
@@ -338,64 +291,12 @@
                 <div class="closeicon" role="presentation">x</div>
               </div>
             </figure>
-        <figure class="js-filtered show even" data-tags=" film executive foodie history-buff book-worm gamer outdoorsy gryffindor sweet team-dogs">
-          <div class="img-wrap"><img loading="lazy" class="loz" data-src="https://www.xpeditionmedia.com/images/hunter_hufd70e5be0ca8dfbf8b4e26acf389e809_99749_450x338_fill_q80_linear_center.jpg" alt="">
-          </div>
-          <figcaption>
-            <h2>Hunter Johnson</h2>
-            <p>CEO, Executive Producer</p>
-          </figcaption>
-          <div class="reveal">
-            <div class="text" tabindex="0">
-              <p>Prior to starting Xpedition Media, Hunter produced shows for major networks such as HBO, HGTV, FOX, CBS, CW, Discovery, and History. After spending more than 15 years in television production and development, Hunter understands what drives an incredible story. He now brings this expertise to clients, helping incorporate authentic human storytelling through branded content.
-                Hunter is a proud member of both the Producers Guild of America and the Academy of Television Arts &amp;amp; Sciences. He earned a BFA in Film and Television Producing from Chapman University.</p>
-              <p>
-                <strong>Fun Fact<br></strong>
-                <span>In 2018, Hunter competed in an international basketball tournament in Paris, France for the Gay Olympics. His team went undefeated in his division and they captured the gold medal in a close game against Mexico!</span>
-              </p>
-            </div>
-            <div class="closeicon" role="presentation">x</div>
-          </div>
-        </figure>
-    
-        <figure class="js-filtered show" data-tags=" film executive musically-inclined book-worm tacos ravenclaw coffee savory">
-          <div class="img-wrap"><img loading="lazy" class="loz" data-src="https://www.xpeditionmedia.com/images/tony_hu3508d71e0fb7ff245a64f03dbfd24b99_137570_450x338_fill_q80_linear_center.jpg" alt="">
-          </div>
-          <figcaption>
-            <h2>Anthony Ervolino</h2>
-            <p>Chief Content Officer</p>
-          </figcaption>
-          <div class="reveal">
-            <div class="text" tabindex="0">
-              <p>Prior to working with Xpedition Media, Anthony began his career in production for independent feature films, working as a first AD and UPM. Later, he focused more on post production, supervising over a hundred shows for major networks such as HBO, NBC, CW, Discovery, History and many more. In addition to his logistic skills, Anthony is also an award winning and published author, who has kept his love of storytelling as the main focus no matter what job he is currently taking on.</p>
-              <p>
-                <strong>Fun Fact<br></strong>
-                <span>Reading is an important part of Anthony’s life. He tries to read a book a week from varying genres and by authors of different backgrounds.</span>
-              </p>
-            </div>
-            <div class="closeicon" role="presentation">x</div>
-          </div>
-        </figure>
-    
-        <figure class="js-filtered show even" data-tags=" film executive foodie tacos hufflepuff tea savory team-dogs team-cats indoorsy">
-          <div class="img-wrap"><img loading="lazy" class="loz" data-src="https://www.xpeditionmedia.com/images/snejana_hu93601937c5ad78a70489da48d732c742_65614_450x338_fill_q80_linear_center.jpg" alt="">
-          </div>
-          <figcaption>
-            <h2>Snejana Daily</h2>
-            <p>Vice President of Brand Relations</p>
-          </figcaption>
-          <div class="reveal">
-            <div class="text" tabindex="0">
-              <p>Snejana is a first generation Bulgarian-American who is passionate about people and their stories. She has traveled to 30&#43; countries and explored over half of the US. She began her career in production by traveling to some of the most impoverished regions of the world with “Operation Change” - the Oprah Winfrey Network’s documentary series on international philanthropy. Since then, she has been producing television series, documentaries, and digital content for brands like Nike, Bose, Kelloggs, Brawny, and Chevy. She has also spent several years running a boutique consulting agency specializing in digital marketing strategy for small businesses. As part of the Xpedition team Snejana has supervised the production of videos across regions and Google teams. Snejana has split allegiances with a Masters of Public Policy from UCLA and a BA in Psychology from USC.</p>
-              <p>
-                <strong>Fun Fact<br></strong>
-                <span>Snejana loves costumes (the more elaborate, the better!) and will one day make it her side hustle to design and create ethnically inspired costumes (BONUS - she once cosplayed Link from Legend of Zelda).</span>
-              </p>
-            </div>
-            <div class="closeicon" role="presentation">x</div>
-          </div>
-        </figure>
       </div>
+    </section>
+    <section style="margin: 20px auto 40px; width: 400px;">
+      <h2><a href="#">Large Text Link █#5e9cba;</a></h2><br>
+      <a href="#"><strong>Bold Link █#3f7d9d;</strong></a><br><br>
+      <a href="#">Normal weight link █#016a9f</a>
     </section>
 
   </main>
