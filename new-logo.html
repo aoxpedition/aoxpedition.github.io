@@ -228,6 +228,12 @@
 <!-- ╭──────────── CONTROLS  ────────────╮  -->
 <!--      ╭─────── STYLE ───────╮  -->
     <style>
+      .darken{
+      transition: filter .3s;
+      }
+      .shrink .darken {
+      filter: brightness(0);
+    }
       .controls{
         align-items: center;
         background-color: #CCCA;
@@ -249,6 +255,7 @@
     <div class="controls">
       <b>LOGO:</b>
       <button type="button" onclick="wordmark('white')">White</button>
+      <button type="button" onclick="wordmark('white-black')">White/Black</button>
       <button type="button" onclick="wordmark('blue')">Blue</button>
       <button type="button" onclick="wordmark('original')">Original</button>
       <span>|</span>
@@ -258,17 +265,14 @@
         <b id="size">200w</b>
         <button type="button" onclick="size('+')"> + </button>
       </div>
-      <b>SHADOW:</b>
-      <div>
-        <button type="button" onclick="shadow(false)"> Off </button>
-        <button type="button" onclick="shadow(true)"> On </button>
-      </div>
+
     </div>
 <!--      ╭─────── FUNCTIONS ───────╮  -->
     <script>
     function wordmark(file){
       let wm = document.querySelector('.wordmark');
       let sz = document.querySelector('#size')
+      wm.classList.remove('darken')
       switch (file) {
         case "blue":
           wm.src = '/images/X-word-blue-fw_500.png'
@@ -277,6 +281,11 @@
         case "white":
           wm.src = '/images/X-word-white-fw_500.png'
           wm.setAttribute('style', 'width:200px; margin-left: -8%; margin-top: -6%;')
+        break;
+        case "white-black":
+          wm.src = '/images/X-word-white-fw_500.png'
+          wm.setAttribute('style', 'width:200px; margin-left: -8%; margin-top: -6%;')
+          wm.classList.add('darken')
         break;
         case "original":
           wm.src = '/images/xm-wordmark.png'
